@@ -1,15 +1,11 @@
-/* SCSS HEX */
-$space-cadet: #2b2d42ff;
-$crimson: #a51c30ff;
-$cardinal: rgb(234, 215, 217);
-$persian-green: #17a398ff;
-$white: #ffff;
+@import '../../variables.scss';
 
 .leftbar {
   position: sticky;
   top: 60px;
   border-right: 1px solid $crimson;
   height: 100vh;
+  width: 165px;
 
   .container {
     padding: 20px;
@@ -84,7 +80,6 @@ $white: #ffff;
 @media only screen and (max-width: 767px) {
   .leftbar {
     flex-direction: column;
-    display: none;
   }
 
   .menu {

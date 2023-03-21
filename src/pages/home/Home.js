@@ -9,7 +9,10 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { Pagination, Navigation } from 'swiper';
+import 'swiper/css/scrollbar';
+import {
+  Pagination, Navigation, Scrollbar, A11y,
+} from 'swiper';
 import ReactLoading from 'react-loading';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { getAllTechnicians } from '../../redux/technicians/technician';
@@ -57,10 +60,10 @@ const Home = () => {
           <Swiper
             onSwiper={setSwiperRef}
             slidesPerView={2}
-            centeredSlides
             spaceBetween={40}
             navigation
-            modules={[Pagination, Navigation]}
+            scrollbar={{ draggable: true }}
+            modules={[Pagination, Navigation, Scrollbar, A11y]}
             className="mySwiper"
           >
             {tech.map((technician) => (

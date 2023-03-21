@@ -25,6 +25,10 @@
   font-weight: bold !important;
 }
 
+.zero-length {
+  padding: 2rem;
+}
+
 .reserve-cover-section {
   display: flex;
 }

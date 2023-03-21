@@ -1,8 +1,4 @@
-$space-cadet: #2b2d42ff;
-$crimson: #a51c30ff;
-$cardinal: rgb(234, 215, 217);
-$persian-green: #17a398ff;
-$white: #ffff;
+@import '../../variables.scss';
 
 * {
   box-sizing: border-box;
@@ -105,10 +101,15 @@ form {
 }
 
 .card-technicians {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   padding: 1rem;
+
+  .tech-name {
+    padding-left: 10px;
+    font-weight: bold;
+  }
 
   .btn-appointment {
     background: #039be5;
